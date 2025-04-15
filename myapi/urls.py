@@ -3,6 +3,8 @@ from .views import HelloWorld
 from .views import SecureHelloView
 from rest_framework.authtoken.views import obtain_auth_token
 from django.http import JsonResponse
+from . import views
+
 
 def home(request):
     return JsonResponse({'status': 'API is running 🚀'})
