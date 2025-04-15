@@ -68,18 +68,6 @@ TEMPLATES = [
 WSGI_APPLICATION = 'myproject.wsgi.application'
 
 
-# Database configuration (adjust if using PostgreSQL)
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',  # Change to PostgreSQL
-        'NAME': 'your_db_name',                     # Replace with your database name
-        'USER': 'your_db_user',                     # Replace with your database user
-        'PASSWORD': 'your_db_password',             # Replace with your database password
-        'HOST': 'localhost',                        # Update as needed
-        'PORT': '5432',                             # Default PostgreSQL port
-    }
-}
-
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
 
