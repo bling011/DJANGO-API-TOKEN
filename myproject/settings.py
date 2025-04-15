@@ -1,4 +1,7 @@
 from pathlib import Path
+import os
+import dj_database_url
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -21,6 +24,13 @@ REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.IsAuthenticated',
     ],
+}
+
+
+DATABASES = {
+    'default': dj_database_url.config(
+        default='postgresql://fast_api_app_user:RiL7fhtm42Uiel2P2LyCGvt5jYzsBLq0@dpg-cvv2f215pdvs73bv874g-a/fast_api_app'
+    )
 }
 
 # Application definition
